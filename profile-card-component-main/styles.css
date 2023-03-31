@@ -1,0 +1,145 @@
+@font-face {
+	font-family: "KumbhSans";
+	src: url(./fonts/KumbhSans.ttf) format("truetype-variations");
+	font-weight: 1 999;
+	font-display: swap;
+}
+
+:root {
+	/*Primary*/
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	--dark-grayish-blue-line: hsla(227, 10%, 46%, 0.2);
+
+	/*Neutral*/
+	--dark-gray: hsl(0, 0%, 59%);
+	--white: hsl(0, 0%, 100%);
+
+	/*Font*/
+	--font: "KumbhSans", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: var(--very-dark-desaturated-blue);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.main-container {
+	height: 100vh;
+	font-family: var(--font);
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	color: black;
+	overflow: hidden;
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+	background-color: var(--dark-cyan);
+	text-rendering: optimizeSpeed;
+}
+
+.card-container {
+	width: 100%;
+	max-width: 350px;
+	border-radius: 0.625rem;
+	background-color: var(--white);
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+}
+
+.images-container {
+	position: relative;
+}
+
+.images-container .card-banner {
+	width: 100%;
+	height: 100%;
+}
+
+.avatar-img img {
+	border-radius: 50%;
+	width: 7rem;
+	position: absolute;
+	left: 50%;
+	bottom: -3rem;
+	transform: translate(-50%);
+	border: 5px solid var(--white);
+	background-color: white;
+}
+
+.person-data {
+	margin-top: 4.5rem;
+	text-align: center;
+}
+
+.person-data h1 {
+	color: var(--very-dark-desaturated-blue);
+}
+
+.person-data span,
+p {
+	font-weight: 400;
+	color: var(--dark-grayish-blue);
+}
+
+.person-data p {
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	color: var(--dark-grayish-blue);
+	padding-bottom: 2rem;
+}
+
+.statistics {
+	padding: 2rem;
+	border-top: 1px solid var(--dark-grayish-blue-line);
+}
+
+.statistics-list {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	gap: 2.5rem;
+	color: var(--very-dark-desaturated-blue);
+}
+
+.statistics-list span {
+	font-weight: 400;
+	padding-top: 0.4rem;
+	font-size: 0.8rem;
+	color: var(--dark-grayish-blue);
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1rem;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	font-size: 13px;
+	text-align: center;
+	color: var(--white);
+	padding: 1rem;
+}
