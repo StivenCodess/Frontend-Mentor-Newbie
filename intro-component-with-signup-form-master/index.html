@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" lang="en" content="StivenCodess" />
+		<meta
+			name="keywwords"
+			content="frontendmentor,
+			Frontend,
+			Intro component with sign up form,
+			StivenCodes,
+			StivenCodess,
+			Stiven"
+		/>
+		<meta
+			name="description"
+			content="Intro component with sign up form Frontendmentor by StivenCodess"
+		/>
+		<meta name="copyright" content="Copyright © StivenCodess" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="index.css" />
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<main>
+			<section class="info">
+				<h1>Learn to code by watching others</h1>
+				<p>
+					See how experienced developers solve problems in real-time. Watching scripted
+					tutorials is great, but understanding how developers think is invaluable.
+				</p>
+			</section>
+
+			<article class="offer__container">
+				<div class="offer__box">
+					<p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+				</div>
+
+				<form class="offer__form" action="/">
+					<label class="offer__label">
+						<input
+							class="form__input"
+							placeholder="First Name"
+							type="text"
+							id="firstnm"
+						/>
+						<img
+							class="label__error"
+							src="images/icon-error.svg"
+							alt="icon error"
+							width="20"
+							height="20"
+						/>
+						<span class="error__text">First name cannot be empty</span>
+					</label>
+					<label class="offer__label">
+						<input class="form__input" placeholder="Last Name" type="text" id="lastnm" />
+						<img
+							class="label__error"
+							src="images/icon-error.svg"
+							alt="icon error"
+							width="20"
+							height="20"
+						/>
+						<span class="error__text">Last name cannot be empty</span>
+					</label>
+					<label class="offer__label">
+						<input
+							class="form__input"
+							placeholder="Email Address"
+							type="text"
+							id="email"
+						/>
+						<img
+							class="label__error"
+							src="images/icon-error.svg"
+							alt="icon error"
+							width="20"
+							height="20"
+						/>
+						<span class="error__text">Looks like this is not an email</span>
+					</label>
+					<label class="offer__label">
+						<input
+							class="form__input"
+							placeholder="Password"
+							type="password"
+							id="password"
+						/>
+						<img
+							class="label__error"
+							src="images/icon-error.svg"
+							alt="icon error"
+							width="20"
+							height="20"
+						/>
+						<span class="error__text">Password cannot be empty</span>
+					</label>
+
+					<button class="form__btn" type="submit">Claim your free trial</button>
+					<h2 class="form__terms">
+						By clicking the button, you are agreeing to our <b>Terms and Services</b>
+					</h2>
+				</form>
+			</article>
+		</main>
+		<footer>
+			<p class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://github.com/StivenCodess" target="_blank">StivenCodes</a>.
+			</p>
+		</footer>
+	</body>
+</html>
