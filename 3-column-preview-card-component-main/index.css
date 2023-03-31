@@ -1,0 +1,142 @@
+@font-face {
+	font-family: "Lexend";
+	src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+	display: swap;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "BigShoulders";
+	src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+	display: swap;
+	font-weight: 700;
+}
+
+:root {
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-ggray: hsl(0, 0%, 95%);
+	--lexend: "Lexend", sans-serif;
+	--BigSho: "BigShoulders", sans-serif;
+}
+
+body {
+	display: grid;
+	justify-items: center;
+	grid-template-rows: 1fr auto;
+	background-color: var(--very-light-ggray);
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: var(--BigSho);
+	font-size: 2.3rem;
+	color: var(--very-light-ggray);
+}
+
+p {
+	font-family: var(--lexend);
+	font-size: 0.9rem;
+	color: var(--transparent-white);
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+main {
+	width: 20rem;
+}
+
+main section {
+	padding: 3rem;
+}
+
+.button {
+	width: 10rem;
+	padding: 0.7rem;
+	border-radius: 2rem;
+	background-color: var(--very-light-ggray);
+	font-family: var(--lexend);
+}
+
+.sedans {
+	margin-top: 5.5rem;
+	background-color: var(--bright-orange);
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sedans button {
+	color: var(--bright-orange);
+}
+
+.suvs {
+	background-color: var(--dark-cyan);
+}
+
+.suvs button {
+	color: var(--dark-cyan);
+}
+
+.luxury {
+	margin-bottom: 5.5rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	background-color: var(--very-dark-cyan);
+}
+
+.luxury button {
+	color: var(--very-dark-cyan);
+}
+
+.attribution {
+	font-family: var(--lexend);
+	font-size: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+.attribution a {
+	text-decoration: none;
+	color: var(--bright-orange);
+	cursor: pointer;
+}
+
+.attribution a:hover {
+	color: var(--dark-cyan);
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		justify-items: center;
+		align-items: center;
+		grid-template-rows: 1fr auto;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.cars__container {
+		width: 55rem;
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+	.luxury,
+	.sedans {
+		margin: 0;
+	}
+	.sedans {
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+
+	.luxury {
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.button {
+		margin-top: 5rem;
+	}
+}
